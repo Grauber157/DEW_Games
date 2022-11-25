@@ -53,6 +53,20 @@ class Car {
 
         this.x -= Math.sin(this.angle)*this.speed
         this.y -= Math.cos(this.angle)*this.speed
+
+        if(this.x < 0){
+            this.x = innerWidth
+        }
+        if(this.x > innerWidth){
+            this.x = 0
+        }
+
+        if(this.y < 0){
+            this.y = innerHeight
+        }
+        if(this.y > innerHeight){
+            this.y = 0
+        }
     }
 
     draw(ctx) {
@@ -71,6 +85,7 @@ class Car {
 
         ctx.restore()
     }
+
 
     
 }
