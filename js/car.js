@@ -71,4 +71,10 @@ class Car {
 
         ctx.restore()
     }
+
+    check() {
+        if(this.y != 0){
+            this.speed = 0
+        }
+    }
 }
