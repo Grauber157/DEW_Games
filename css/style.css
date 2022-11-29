@@ -9,12 +9,25 @@ body {
     background: lightgray;
 }
 
-/*#object {
-    width: 200px;
-    height: 200px;
+#placar {
+    height: 100px;
+    width: 100px;
     background-color: orange;
     position: absolute;
-    left: 100px;
-    top: 100px;
 }
-*/ 
+
+#coin {
+    width: 50px;
+    height: 50px;
+   border: 1px solid black;
+    background-image: url("../img/moeda.png");
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+#coinFigure {
+    width: 50px;
+    height: 50px;
+}
+

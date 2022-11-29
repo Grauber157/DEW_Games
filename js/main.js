@@ -1,10 +1,13 @@
 const canvas = document.getElementById('myCanvas')
-var object = document.getElementById('object')
+let el = document.getElementById('coin')
+
+el.style.left = 10
+
+var score = 0
 
 const ctx = canvas.getContext('2d')
-const car = new Car(400,400,30,50)
+const car = new Car(200,200,30,50)
 
-var object = new Object(10,10,200,200)
 
 animate()
 
@@ -15,3 +18,7 @@ function animate() {
     car.draw(ctx)
     requestAnimationFrame(animate)
 }
+
+    if(Coin.x == Car.x){
+        collected()
+    }   
