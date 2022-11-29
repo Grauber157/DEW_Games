@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    background: darkgray;
+    overflow: hidden;
+    text-align: center;
+}
+
+#myCanvas {
+    background: lightgray;
+}
+
+#placar {
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    position: absolute;
+}
+
+#coin {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    background-image: url(../img/moeda.png) ;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+#coinFigure {
+    width: 50px;
+    height: 50px;
+}
+
